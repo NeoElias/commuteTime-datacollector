@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collector App</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Ever wonder how your commute time compares to others in your area?</h1>
+        <h3>Please fill the entries to find out.</h3>
+        <div class="message">
+            {{text | safe}}
+        </div>
+        <form class="field" action="{{url_for('success')}}" method="POST">
+            <input class="input" title="Your email will be safe with us" placeholder="Enter your email address" type="email" name="email_name" required><br>
+            <input class="input" title="Your email will be safe with us" placeholder="Enter your commute time in mins" type="number" min="50" max="300" name="commuteTime_name" required><br>
+            <button class="button is-link" type="submit"> Submit </button>
+        </form>
+    </div>
+
+</body>
+</html>

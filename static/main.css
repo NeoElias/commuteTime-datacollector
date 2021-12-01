@@ -2,7 +2,6 @@ html, body {
   
     background-color: #8496C4;
     height: 100%;
- 
 }
 
 .container {
@@ -34,8 +33,10 @@ html, body {
 
 .message {
     font-family: Arial, sans-serif;
-    font-size: 15px;
-    color: #CAC0C1;
+    color: #ff0033;
+    max-width: 500px;
+    margin: auto;
+
 }
 
 .section {
@@ -43,3 +44,8 @@ html, body {
     height: 100vh;
    
 }
+
+h3 {
+    color: white;
+}
+
